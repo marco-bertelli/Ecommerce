@@ -15,8 +15,6 @@ export class LoginService {
 
   constructor(private router: Router,private loginService:LoginServerService,private store:Store) { }
 
-  
-
   executeLogin(username: string,password:string){
     
     this.loginService.retrieveUser(username,password).subscribe((users:User[])=>{

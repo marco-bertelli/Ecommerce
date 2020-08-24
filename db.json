@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "username": "LukeSkywa",
+      "name": "Luca",
+      "surname": "Alicata",
+      "password": "prova"
+    },
+    {
+      "id": 1,
+      "username": "marco",
+      "name": "Luca",
+      "surname": "Alicata",
+      "password": "prova"
+    }
+  ]
+  
+}
