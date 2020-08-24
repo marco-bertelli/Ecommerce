@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpCommunicationsService } from '../http-communications/http-communications.service';
 import { User } from '../model/user.interface';
 import { Observable } from 'rxjs';
+import { HttpCommunicationsService } from '../http-communications/http-communications.service';
 
 @Injectable({
   providedIn: 'root'
