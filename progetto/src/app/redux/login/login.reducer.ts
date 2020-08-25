@@ -12,6 +12,7 @@ export const initialState:LoginState={
     user:null
 }
 
+
 const LoginReducer=createReducer(
     initialState,
     on(UpdateUser,(state,{user})=>({...state,user:user})),
