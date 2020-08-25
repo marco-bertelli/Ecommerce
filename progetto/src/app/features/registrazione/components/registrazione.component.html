@@ -1,1 +1,7 @@
-<p>registrazione works!</p>
+<form [formGroup]="registrazioneForm" (ngSubmit)="doRegistrazione()">
+    <app-input-text formControlName="username" [label]="'Username'"></app-input-text>
+    <app-input-text formControlName="password" [label]="'Password'"></app-input-text>
+    <app-input-text formControlName="name" [label]="'name'"></app-input-text>
+    <app-input-text formControlName="surname" [label]="'surname'"></app-input-text>
+    <button type="submit">Registrati</button>
+</form>

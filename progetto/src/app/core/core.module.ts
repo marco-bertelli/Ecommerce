@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpCommunicationsService } from './http-communications/http-communications.service';
 import { HttpClientModule } from '@angular/common/http';
+import {RegistrazioneServerService} from './services/registrazione-server.service';
 
 
 
@@ -11,6 +12,6 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     HttpClientModule
   ],
-  providers: [HttpCommunicationsService],
+  providers: [HttpCommunicationsService,RegistrazioneServerService],
 })
 export class CoreModule { }

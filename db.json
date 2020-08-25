@@ -13,7 +13,13 @@
       "name": "Luca",
       "surname": "Alicata",
       "password": "prova"
+    },
+    {
+      "name": "LukeSkywa",
+      "surname": "LukeSkywa",
+      "username": "LukeSkywa",
+      "password": "LukeSkywa",
+      "id": 2
     }
   ]
-  
 }
