@@ -28,5 +28,14 @@
       "password": "LukeSkywa",
       "id": 3
     }
+  ],
+  "prodotti":[
+    {
+      "nome":"prova",
+      "colore":"prova",
+      "testo":"prova",
+      "Ctesto":"prova"
+    }
   ]
+
 }
