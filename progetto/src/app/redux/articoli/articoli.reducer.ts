@@ -15,6 +15,6 @@ const ProdottiReducer=createReducer(
     on(UpdateProdotti,(state,{prodotti})=>({...state,prodotti:prodotti})),
 )
 
-export function recucerProdotti(state:ProdottiState | undefined, action :Action){
+export function reducerProdotti(state:ProdottiState | undefined, action :Action){
     return(ProdottiReducer(state,action));
 }

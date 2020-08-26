@@ -6,8 +6,10 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { StoreModule } from '@ngrx/store';
 import { reducerLogin } from './redux/login/login.reducer';
+import { reducerProdotti } from './redux/articoli/articoli.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { LoginEffects } from './redux/login/login.effects';
+import { ArticoliEffects } from './redux/articoli/articoli.effects';
 
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment'; // Angular CLI environment
@@ -22,8 +24,8 @@ import { environment } from '../environments/environment'; // Angular CLI enviro
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    StoreModule.forRoot({loginState: reducerLogin }),
-    EffectsModule.forRoot([LoginEffects]),
+    StoreModule.forRoot({loginState: reducerLogin, ProdottiState :reducerProdotti }),
+    EffectsModule.forRoot([LoginEffects,ArticoliEffects]),
     
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states

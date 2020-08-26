@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Prodotto } from 'src/app/core/model/prodotto.interface';
+import { Store, select } from '@ngrx/store';
+import { ActivatedRoute } from '@angular/router';
+import { selectProdotti } from 'src/app/redux/articoli';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +11,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  prodotti:Prodotto[];
+
+  constructor(private store: Store,private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+
+    this.store.pipe(select(selectProdotti)
+    ).subscribe(prodotti => {
+      this.prodotti=prodotti;
+    });
   }
 
 }

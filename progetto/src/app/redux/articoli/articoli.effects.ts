@@ -1,6 +1,6 @@
 import { HttpCommunicationsService } from './../../core/http-communications/http-communications.service';
 import { Injectable } from '@angular/core';
-import { Actions, createEffect, ofType } from '@ngrx/effects';
+import { Actions, createEffect, ofType, ROOT_EFFECTS_INIT } from '@ngrx/effects';
 
 import { switchMap, map } from 'rxjs/operators';
 
@@ -11,11 +11,16 @@ import { Prodotto } from '../../core/model/prodotto.interface';
 @Injectable()
 export class ArticoliEffects {
 
-    retrieveAllTodos$ = createEffect(() => this.actions$.pipe(
+    retrieveProdotti$ = createEffect(() => this.actions$.pipe(
         ofType(initProdotti),
         switchMap(() => this.httpCommunicationsService.retrieveGetCall<Prodotto[]>("prodotti").pipe(
             map(prodotti => UpdateProdotti({ prodotti }))
         ))
+    ));
+
+    initProdotti$ = createEffect(() => this.actions$.pipe(
+        ofType(ROOT_EFFECTS_INIT),
+            map(() => initProdotti())
     ));
 
 
