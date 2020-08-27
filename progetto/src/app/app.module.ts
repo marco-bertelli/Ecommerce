@@ -10,7 +10,7 @@ import { reducerProdotti } from './redux/articoli/articoli.reducer';
 import { EffectsModule } from '@ngrx/effects';
 import { LoginEffects } from './redux/login/login.effects';
 import { ArticoliEffects } from './redux/articoli/articoli.effects';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
+import {IvyCarouselModule} from 'angular-responsive-carousel'; //messo qua per sicurezza da rimuovere alla fine perchè nello shared
 
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment'; // Angular CLI environment

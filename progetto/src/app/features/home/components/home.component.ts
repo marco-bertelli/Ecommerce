@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Prodotto } from 'src/app/core/model/prodotto.interface';
-import { Store, select } from '@ngrx/store';
+import { Store, select, on } from '@ngrx/store';
 import { ActivatedRoute } from '@angular/router';
 import { selectProdotti } from 'src/app/redux/articoli';
 import { Subscription } from 'rxjs';
@@ -24,6 +24,11 @@ export class HomeComponent implements OnInit {
     },
   ];
 
+  images = [
+    {path:"./assets/img/tacchino-2.jpg"},
+    {path:"./assets/img/t.jpg"},
+  ];
+
   constructor(private store: Store,private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -34,6 +39,14 @@ export class HomeComponent implements OnInit {
     }));
 
     console.log(this.prodotti);
+  }
+
+  selezionaProdotto($event){
+    on($event.click)
+    let a =$event.index;
+    if(a!=null)
+    console.log(a)
+    
   }
 
 
