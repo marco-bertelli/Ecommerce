@@ -7,7 +7,7 @@ export interface ProdottiState{
 }
 
 export const initialState:ProdottiState={
-    prodotti:null
+    prodotti:[ ]
 }
 
 const ProdottiReducer=createReducer(

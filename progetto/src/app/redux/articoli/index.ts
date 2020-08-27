@@ -6,5 +6,8 @@ export const selectProdottiState =(state:AppState)=>state.prodottiState;
 
 export const selectProdotti=createSelector(
     selectProdottiState,
-    (state:ProdottiState)=>state.prodotti
+    (state:ProdottiState)=>{
+        console.log(state)
+        return state.hasOwnProperty('prodotti') ? state.prodotti : []
+    }
 )
