@@ -25,7 +25,7 @@ import { environment } from '../environments/environment'; // Angular CLI enviro
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    StoreModule.forRoot({loginState: reducerLogin, ProdottiState :reducerProdotti }),
+    StoreModule.forRoot({loginState: reducerLogin, prodottiState :reducerProdotti }),
     EffectsModule.forRoot([LoginEffects,ArticoliEffects]),
     IvyCarouselModule,
     
