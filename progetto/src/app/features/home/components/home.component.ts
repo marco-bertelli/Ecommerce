@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Prodotto } from 'src/app/core/model/prodotto.interface';
 import { Store, select, on } from '@ngrx/store';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { selectProdotti } from 'src/app/redux/articoli';
 import { Subscription } from 'rxjs';
 import { initProdotti } from 'src/app/redux/articoli/articoli.action';
@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
     {path:"./assets/img/t.jpg"},
   ];
 
-  constructor(private store: Store,private route: ActivatedRoute) { }
+  constructor(private store: Store,private router: Router) { }
 
   ngOnInit(): void {
 
@@ -40,12 +40,13 @@ export class HomeComponent implements OnInit {
 
     console.log(this.prodotti);
   }
-
+  //metodo per customizzare e aggiungere al carrello
   selezionaProdotto($event){
     on($event.click)
     let a =$event.index;
     if(a!=null)
     console.log(a)
+    this.router.navigate(['/customize',a]);
     
   }
 

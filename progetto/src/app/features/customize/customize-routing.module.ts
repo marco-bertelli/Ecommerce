@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { CustomizeComponent } from './customize.component';
+import { CustomizeComponent } from './components/customize.component';
 
 const routes: Routes = [{ path: '', component: CustomizeComponent }];
 

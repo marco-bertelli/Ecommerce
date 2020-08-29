@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { CustomizeRoutingModule } from './customize-routing.module';
 import { CustomizeComponent } from './components/customize.component';
+import { Prodotto } from 'src/app/core/model/prodotto.interface';
+import { ActivatedRoute } from '@angular/router';
 
 
 @NgModule({
@@ -14,9 +16,9 @@ import { CustomizeComponent } from './components/customize.component';
 })
 export class CustomizeModule { 
 
-  item:ListItem;
+  item:Prodotto;
 
-  constructor(private myHttpService: MyHttpService,private activateRoute:ActivatedRoute) { }
+  constructor(private activateRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
     /* codice da attivare appena completo bene la home
@@ -27,5 +29,10 @@ export class CustomizeModule {
     });
   })
   */
+ this.activateRoute.paramMap.subscribe(params=>{
+   console.log(params.get("id"));
+ })
+   
+
   }
 }

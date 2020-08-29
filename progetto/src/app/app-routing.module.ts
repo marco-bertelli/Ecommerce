@@ -7,7 +7,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'registrazione', loadChildren: () => import('./features/registrazione/registrazione.module').then(m => m.RegistrazioneModule) },
   { path: 'home', loadChildren: () => import('./features/home/home.module').then(m => m.HomeModule) },
-  { path: 'customize', loadChildren: () => import('./features/customize/customize.module').then(m => m.CustomizeModule) }
+  { path: 'customize/:id', loadChildren: () => import('./features/customize/customize.module').then(m => m.CustomizeModule) }
 ];
 
 @NgModule({
