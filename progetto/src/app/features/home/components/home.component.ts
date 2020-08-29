@@ -44,9 +44,10 @@ export class HomeComponent implements OnInit {
   selezionaProdotto($event){
     on($event.click)
     let a =$event.index;
-    if(a!=null)
+    if(a!=null){
     console.log(a)
     this.router.navigate(['/customize',a]);
+    }
     
   }
 
