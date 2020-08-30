@@ -15,14 +15,7 @@ export class HomeComponent implements OnInit {
 
   subscription=new Subscription();
 
-  prodotti:Prodotto[]=[
-    {
-      nome:"si",
-      colore:"si",
-      testo:"si",
-      Ctesto:"si"
-    },
-  ];
+  prodotti:Prodotto[]=[];
 
   images = [
     {path:"./assets/img/tacchino-2.jpg"},

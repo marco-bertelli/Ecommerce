@@ -10,4 +10,8 @@ export const selectProdotti=createSelector(
         console.log(state)
         return state.hasOwnProperty('prodotti') ? state.prodotti : []
     }
-)
+);
+export const getProdottoById = createSelector(
+    selectProdottiState,
+    (state: ProdottiState, props: { id: number }) => state.prodotti.find(item => item.id === props.id)
+);

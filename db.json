@@ -31,6 +31,14 @@
   ],
   "prodotti":[
     {
+      "id":0,
+      "nome":"prova",
+      "colore":"prova",
+      "testo":"prova",
+      "Ctesto":"prova"
+    },
+    {
+      "id":1,
       "nome":"prova",
       "colore":"prova",
       "testo":"prova",

@@ -21,14 +21,6 @@ export class CustomizeModule {
   constructor(private activateRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
-    /* codice da attivare appena completo bene la home
-    this.activateRoute.paramMap.subscribe(params=>{
-    this.myHttpService.getSingolo(Number(params.get("id"))).subscribe(response => {
-      this.item=response;
-    }, err => {
-    });
-  })
-  */
  this.activateRoute.paramMap.subscribe(params=>{
    console.log(params.get("id"));
  })
