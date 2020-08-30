@@ -1,1 +1,7 @@
-<p>{{prodotto}}</p>
+<p>{{prodotto.id}}</p>
+<p>{{prodotto.nome}}</p>
+<p>{{prodotto.colore}}</p>
+<p>{{prodotto.testo}}</p>
+<p>{{prodotto.Ctesto}}</p>
+<app-customize-form (formSubmitEvent)="editForm($event)" [prodotto]="prodotto" (undoEvent)="undo()"></app-customize-form>
+

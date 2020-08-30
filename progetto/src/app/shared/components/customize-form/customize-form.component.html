@@ -1,0 +1,9 @@
+<form [formGroup]="prodottoForm" (ngSubmit)="confirmChanges()">
+    <app-input-text formControlName="nome" ></app-input-text>
+    <app-input-text formControlName="colore" ></app-input-text>
+    <app-input-text formControlName="testo" ></app-input-text>
+    <app-input-text formControlName="Ctesto" ></app-input-text>
+    <button (click)="cancel()" type="button">Annulla</button>
+    <button type="submit" [disabled]="prodottoForm.invalid">Conferma</button>
+</form>
+

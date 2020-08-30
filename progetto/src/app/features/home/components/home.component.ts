@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   subscription=new Subscription();
 
   prodotti:Prodotto[]=[];
-
+  //immagini per carosello
   images = [
     {path:"./assets/img/tacchino-2.jpg"},
     {path:"./assets/img/t.jpg"},

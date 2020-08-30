@@ -5,26 +5,17 @@ import { CustomizeRoutingModule } from './customize-routing.module';
 import { CustomizeComponent } from './components/customize.component';
 import { Prodotto } from 'src/app/core/model/prodotto.interface';
 import { ActivatedRoute } from '@angular/router';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
   declarations: [CustomizeComponent],
   imports: [
     CommonModule,
-    CustomizeRoutingModule
+    CustomizeRoutingModule,
+    SharedModule
   ]
 })
 export class CustomizeModule { 
-
-  item:Prodotto;
-
-  constructor(private activateRoute:ActivatedRoute) { }
-
-  ngOnInit(): void {
- this.activateRoute.paramMap.subscribe(params=>{
-   console.log(params.get("id"));
- })
-   
-
   }
-}
+

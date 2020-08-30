@@ -26,5 +26,13 @@ export class CustomizeComponent implements OnInit {
       this.prodotto = prodotto;
     }));
   }
-
+  editForm(prodotto) {
+    //mettere codice che lo invia al carrello
+    
+    this.prodotto=prodotto;
+    
+  }
+  undo() {
+    this.prodotto=this.prodotto;
+  }
 }

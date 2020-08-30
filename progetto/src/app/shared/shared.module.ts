@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { InputTextComponent } from './components/input-text/input-text.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { CustomizeFormComponent } from './components/customize-form/customize-form.component';
 
 
 
 @NgModule({
   declarations: [
     InputTextComponent,
+    CustomizeFormComponent,
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     InputTextComponent,
     FormsModule,
     ReactiveFormsModule,
-    IvyCarouselModule
+    IvyCarouselModule,
+    CustomizeFormComponent
   ]
 
 })
