@@ -5,6 +5,7 @@ import { Prodotto } from 'src/app/core/model/prodotto.interface';
 import { filter, switchMap } from 'rxjs/operators';
 import { select, Store } from '@ngrx/store';
 import { getProdottoById } from 'src/app/redux/articoli';
+import { insertProdotto } from 'src/app/redux/carrello/carrello.action';
 
 @Component({
   selector: 'app-customize',
@@ -27,7 +28,8 @@ export class CustomizeComponent implements OnInit {
     }));
   }
   editForm(prodotto) {
-    //mettere codice che lo invia al carrello
+    //inserimento del prodotto
+    this.store.dispatch(insertProdotto({prodotto}));
     
     this.prodotto=prodotto;
     

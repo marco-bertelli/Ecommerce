@@ -14,6 +14,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel'; //messo qua per s
 
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment'; // Angular CLI environment
+import { reducerCarrello } from './redux/carrello/carrello.reducer';
 
 
 @NgModule({
@@ -25,7 +26,7 @@ import { environment } from '../environments/environment'; // Angular CLI enviro
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    StoreModule.forRoot({loginState: reducerLogin, prodottiState :reducerProdotti }),
+    StoreModule.forRoot({loginState: reducerLogin, prodottiState :reducerProdotti ,carrelloState:reducerCarrello}),
     EffectsModule.forRoot([LoginEffects,ArticoliEffects]),
     IvyCarouselModule,
     
