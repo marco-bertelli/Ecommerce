@@ -1,0 +1,30 @@
+button
+{
+    position: relative;
+    display: flex;
+    background: transparent;
+    border-radius: 15px;
+    box-shadow: -2px -2px 3px rgba(255,255,255,0.05),
+                3px 3px 3px rgba(0,0,0,0.2);
+}
+.fa{
+    font-size: 22px;
+    color: #555;   
+}
+button:hover .fa{
+    color:#00f3ff;
+    text-shadow: 0 0 15px #00f3ff;
+}
+label:nth-child(2) button:hover .fa
+{
+    color: #e91e63;
+    text-shadow: 0 0 15px #e91e63;
+}
+radio{
+    align-items: flex;
+}
+
+.form
+{
+    padding: 100px;
+}

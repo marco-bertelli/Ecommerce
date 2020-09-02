@@ -1,7 +1,14 @@
-<p>{{prodotto.id}}</p>
-<p>{{prodotto.nome}}</p>
-<p>{{prodotto.colore}}</p>
-<p>{{prodotto.testo}}</p>
-<p>{{prodotto.Ctesto}}</p>
-<app-customize-form (formSubmitEvent)="editForm($event)" [prodotto]="prodotto" (undoEvent)="undo()"></app-customize-form>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="imgBx">
+            <img src="./assets/img/maglia.png">
+        </div>
+        <div class="contentBx">
+            <h2>Maglia</h2>
 
+        </div>
+    </div>
+</div>
+<app-customize-form (formSubmitEvent)="editForm($event)" [prodotto]="prodotto" (undoEvent)="undo()"></app-customize-form>
+</body>
