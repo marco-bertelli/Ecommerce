@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { Prodotto } from 'src/app/core/model/prodotto.interface';
 import { filter, switchMap } from 'rxjs/operators';
@@ -17,7 +17,7 @@ export class CustomizeComponent implements OnInit {
   private subscription: Subscription = new Subscription();
   prodotto:Prodotto;
   
-  constructor(private route: ActivatedRoute, private store: Store) { }
+  constructor(private route: ActivatedRoute, private store: Store,private router: Router) { }
 
   ngOnInit(): void {
     this.subscription.add(this.route.params.pipe(
@@ -36,5 +36,8 @@ export class CustomizeComponent implements OnInit {
   }
   undo() {
     this.prodotto=this.prodotto;
+  }
+  carrello(){
+    this.router.navigate(['/carrello']);
   }
 }
