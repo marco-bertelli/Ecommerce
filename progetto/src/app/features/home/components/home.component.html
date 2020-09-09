@@ -1,7 +1,13 @@
-<carousel [height]="200" [width]="200" [images]="images" (events)="selezionaProdotto($event)">
-
-</carousel>
-
+<head>
+    
+</head>
+<body>
+    <section>
+        <h1>Yours T-shirts !</h1>
+        <carousel [height]="200" [width]="500" [cellWidth]="500" [images]="images" [autoplay]="true" [borderRadius]="20" (events)="selezionaProdotto($event)"></carousel>
+    </section>
+   
+</body>
 
 
 

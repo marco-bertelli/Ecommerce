@@ -1,0 +1,46 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg,#ffffff,#000000,#000000,#000000);
+    background-size: 400%,400%;
+    position: relative;
+    animation: change 20s ease-in-out infinite;
+
+}
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border:3px solid #fff;
+    position: absolute;
+    top:20%;
+    left:51%;
+    transform: translate(-50%,-50%);
+    padding:2rem;
+}
+carousel{
+    top:50%;
+    left:34%;
+}
+@keyframes change{
+    0%{
+        background-position:0 50% ;
+    }
+    50%{
+        background-position:100% 50% ;
+    }
+    100%{
+        background-position:0 50% ;
+    }
+}
