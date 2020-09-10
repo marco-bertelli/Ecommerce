@@ -15,6 +15,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel'; //messo qua per s
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment'; // Angular CLI environment
 import { reducerCarrello } from './redux/carrello/carrello.reducer';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { reducerCarrello } from './redux/carrello/carrello.reducer';
     StoreModule.forRoot({loginState: reducerLogin, prodottiState :reducerProdotti ,carrelloState:reducerCarrello}),
     EffectsModule.forRoot([LoginEffects,ArticoliEffects]),
     IvyCarouselModule,
+    MDBBootstrapModule.forRoot(),
     
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states
