@@ -12,6 +12,8 @@ import { selectCarrello } from 'src/app/redux/carrello';
 })
 export class CarrelloComponent implements OnInit {
 
+  step=0;
+
   subscription=new Subscription();
   prodotti:Prodotto[]=[];
   
@@ -22,6 +24,10 @@ export class CarrelloComponent implements OnInit {
     ).subscribe(prodotti => {
       this.prodotti=prodotti;
     }));
+  }
+
+  stepS(){
+    this.step++;
   }
 
 }

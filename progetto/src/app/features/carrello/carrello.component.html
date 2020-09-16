@@ -1,4 +1,57 @@
-<ng-container *ngFor='let prodotto of prodotti'>
-    <p>si</p>
 
-</ng-container>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Horizontal Steppers -->
+<div class="row">
+    <div class="col-md-12">
+  
+      <!-- Stepers Wrapper -->
+      <ul class="stepper stepper-horizontal">
+  
+        <!-- First Step -->
+        <li class="completed">
+        <a>
+            <span class="circle">1</span>
+            <span class="label">First step</span>
+          </a>
+        </li>
+  
+        <!-- Second Step -->
+        <li class="completed">
+          <a (click)="stepS()">
+            <span class="circle">2</span>
+            <span class="label">Second step</span>
+          </a>
+        </li>
+  
+        <!-- Third Step -->
+        <li class="warning">
+          <a href="#!">
+            <span class="circle"><mdb-icon fas icon="exclamation"></mdb-icon></span>
+            <span class="label">Third step</span>
+          </a>
+        </li>
+  
+      </ul>
+      <!-- /.Stepers Wrapper -->
+  
+    </div>
+  </div>
+  <!-- /.Horizontal Steppers -->
+    </div>
+  </div>
+
+<div [ngSwitch]="step">
+    <div class="step1" *ngSwitchCase="0" >
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <h2>Riassunto prodotti:</h2>
+                    <ng-container *ngFor='let prodotto of prodotti'>
+                        <p>{{prodotto.nome}}</p>
+                    </ng-container>
+            </div>
+        </div>
+    </div>
+</div> 
+
+  
