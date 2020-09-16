@@ -16,6 +16,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment'; // Angular CLI environment
 import { reducerCarrello } from './redux/carrello/carrello.reducer';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -37,6 +38,9 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
       maxAge: 25, // Retains last 25 states
       logOnly: environment.production, // Restrict extension to log-only mode
     }),
+    
+    
+    BrowserAnimationsModule,
     
 
   ],

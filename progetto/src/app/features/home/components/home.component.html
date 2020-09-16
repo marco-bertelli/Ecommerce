@@ -6,7 +6,7 @@
         <h1>Yours T-shirts !</h1>
 
         <div class="cart">
-        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        <i class="fa fa-shopping-cart" aria-hidden="true"  matBadge="nProdotti" matBadgePosition="before" matBadgeColor="white"></i>
         </div>
 
         <carousel [height]="300" [width]="515" [cellWidth]="515" [images]="images" [autoplay]="true" [borderRadius]="20" (events)="selezionaProdotto($event)"></carousel>

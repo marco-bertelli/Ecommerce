@@ -12,3 +12,10 @@ export const selectCarrello=createSelector(
         return state.hasOwnProperty('prodotti') ? state.prodotti : []
     }
 );
+
+export const selectOggetti=createSelector(
+    selectProdottiState,
+    (state:CarrelloState)=>{
+        return state.hasOwnProperty('prodotti') ? state.prodotti.length : 0
+    }
+);

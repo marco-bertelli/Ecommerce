@@ -5,6 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { selectProdotti } from 'src/app/redux/articoli';
 import { Subscription } from 'rxjs';
 import { initProdotti } from 'src/app/redux/articoli/articoli.action';
+import { selectOggetti } from 'src/app/redux/carrello';
 
 @Component({
   selector: 'app-home',
@@ -16,6 +17,8 @@ export class HomeComponent implements OnInit {
   subscription=new Subscription();
 
   prodotti:Prodotto[]=[];
+  nProdotti=0;
+
   //immagini per carosello
   images = [
     {path:"./assets/img/tacchino-2.jpg"},
@@ -29,6 +32,11 @@ export class HomeComponent implements OnInit {
     this.subscription.add(this.store.pipe(select(selectProdotti)
     ).subscribe(prodotti => {
       this.prodotti=prodotti;
+    }));
+
+    this.subscription.add(this.store.pipe(select(selectOggetti)
+    ).subscribe(prodotti => {
+      this.nProdotti=prodotti;
     }));
 
     console.log(this.prodotti);
