@@ -1,25 +1,20 @@
 
 <div class="wrapper fadeInDown">
     <div id="formContent">
-      <!-- Tabs Titles -->
+      <!-- scelta -->
       <h2 class="active"> Sign In </h2>
-      <h2 class="inactive underlineHover">Sign Up </h2>
-  
-      <!-- Icon -->
-      <div class="fadeIn first">
-        <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
-      </div>
+      <h2 class="inactive underlineHover" (click)="goToRegistrazione()">Sign Up </h2>
   
       <!-- Login Form -->
       <form [formGroup]="loginForm" (ngSubmit)="doLogin()">
         <app-input-text formControlName="username" [label]="'Username'"></app-input-text>
         <app-input-text formControlName="password" [label]="'Password'"></app-input-text>
-        <button type="submit">Login</button>
+        <button class="invia" type="submit">Login</button>
     </form>
   
-      <!-- Remind Passowrd -->
+      <!-- Remind Passowrd da fare -->
       <div id="formFooter">
-        <a class="underlineHover" href="#">Forgot Password?</a>
+        <a class="underlineHover" >Forgot Password?</a>
       </div>
   
     </div>

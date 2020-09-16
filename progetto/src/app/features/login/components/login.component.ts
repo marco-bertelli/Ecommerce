@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { LoginService } from '../services/login.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { LoginService } from '../services/login.service';
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
 
-  constructor(fb: FormBuilder, private loginService: LoginService) {
+  constructor(fb: FormBuilder, private loginService: LoginService,private router: Router) {
     this.loginForm = fb.group({
       username: ['', Validators.required],
       password: ['', Validators.required]
@@ -22,6 +23,9 @@ export class LoginComponent implements OnInit {
 
   doLogin() {
     this.loginService.executeLogin(this.loginForm.get('username').value,this.loginForm.get('password').value);
+  }
+  goToRegistrazione(){
+    this.router.navigate(['/registrazione']);
   }
 
 }
