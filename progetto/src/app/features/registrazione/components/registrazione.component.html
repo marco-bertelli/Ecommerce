@@ -1,7 +1,25 @@
-<form [formGroup]="registrazioneForm" (ngSubmit)="doRegistrazione()">
-    <app-input-text formControlName="username" [label]="'Username'"></app-input-text>
-    <app-input-text formControlName="password" [label]="'Password'"></app-input-text>
-    <app-input-text formControlName="name" [label]="'name'"></app-input-text>
-    <app-input-text formControlName="surname" [label]="'surname'"></app-input-text>
-    <button type="submit">Registrati</button>
-</form>
+
+
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- scelta -->
+      <h2 class="inactive underlineHover" (click)="goToLogin()"> Sign In </h2>
+      <h2 class="active" >Sign Up </h2>
+  
+      <!-- Login Form -->
+    <form [formGroup]="registrazioneForm" (ngSubmit)="doRegistrazione()">
+        <app-input-text formControlName="username" [label]="'Username'"></app-input-text>
+        <app-input-text formControlName="password" [label]="'Password'"></app-input-text>
+        <app-input-text formControlName="name" [label]="'nome e secondo nome '"></app-input-text>
+        <app-input-text formControlName="surname" [label]="'cognome      '"></app-input-text>
+        <button class="invia" type="submit">Registrati</button>
+    </form>
+  
+      <!-- Remind Passowrd da fare -->
+      <div id="formFooter">
+        <a class="underlineHover" >Forgot Password?</a>
+      </div>
+  
+    </div>
+  </div>

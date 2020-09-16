@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RegistrazioneService } from '../services/registrazione.service';
 import { User } from 'src/app/core/model/user.interface';
 import { RegistrazioneServerService } from 'src/app/core/services/registrazione-server.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registrazione',
@@ -13,7 +14,7 @@ export class RegistrazioneComponent implements OnInit {
   registrazioneForm: FormGroup;
   user:User={name :null,surname:null,username:null,password:null};
 
-  constructor(fb: FormBuilder, private regService: RegistrazioneService) {
+  constructor(fb: FormBuilder, private regService: RegistrazioneService,private router: Router) {
     this.registrazioneForm = fb.group({
       username: ['', Validators.required],
       name:['',Validators.required],
@@ -34,6 +35,9 @@ export class RegistrazioneComponent implements OnInit {
    this.user.username=this.registrazioneForm.get('name').value;
 
   this.regService.addUser(this.user);
+  }
+  goToLogin(){
+    this.router.navigate(['/login']);
   }
 
 }
