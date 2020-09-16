@@ -30,6 +30,7 @@ import { reducerCarrello } from './redux/carrello/carrello.reducer';
     EffectsModule.forRoot([LoginEffects,ArticoliEffects]),
     IvyCarouselModule,
     
+    
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states
       logOnly: environment.production, // Restrict extension to log-only mode
