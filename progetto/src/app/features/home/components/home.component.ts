@@ -35,6 +35,7 @@ export class HomeComponent implements OnInit {
   }
   //metodo per customizzare e aggiungere al carrello
   selezionaProdotto($event){
+  
     on($event.click)
     let a =$event.index;
     if(a!=null){

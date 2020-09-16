@@ -1,7 +1,27 @@
-<carousel [height]="200" [width]="200" [images]="images" (events)="selezionaProdotto($event)">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body background="./assets/img/tacchino-2.jpg">
+    <section >
+        <h1>Yours T-shirts !</h1>
 
-</carousel>
+        <div class="cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </div>
 
+        <carousel [height]="300" [width]="515" [cellWidth]="515" [images]="images" [autoplay]="true" [borderRadius]="20" (events)="selezionaProdotto($event)"></carousel>
+        
+            <ul>
+                <li><a href="facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                <li><a href="instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        
+    </section>
+
+    
+   
+</body>
 
 
 
