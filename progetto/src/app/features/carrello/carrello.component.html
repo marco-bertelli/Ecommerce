@@ -25,13 +25,12 @@
         </li>
   
         <!-- Third Step -->
-        <li class="warning">
-          <a href="#!">
-            <span class="circle"><mdb-icon fas icon="exclamation"></mdb-icon></span>
+        <li class="completed">
+          <a (click)="stepS()">
+            <span class="circle"><mdb-icon fas icon="circle">3</mdb-icon></span>
             <span class="label">Third step</span>
           </a>
         </li>
-  
       </ul>
       <!-- /.Stepers Wrapper -->
   
@@ -53,6 +52,14 @@
         </div>
     </div>
     <div class="step2" *ngSwitchCase="1">
+      <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <h2>Indirizzo Spedizione:</h2>
+            <app-step2-form (formSubmitEvent)="salvaForm($event)" (undoEvent)="undo()"></app-step2-form>
+        </div>
+    </div>
+
+    <div class="step2" *ngSwitchCase="2">
       <div class="wrapper fadeInDown">
         <div id="formContent">
             <h2>Indirizzo Spedizione:</h2>
