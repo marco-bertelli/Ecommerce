@@ -1,13 +1,13 @@
 
 <form [formGroup]="indirizzoForm" (ngSubmit)="confirmChanges()" class="form">
-    <app-input-text formControlName="nome" >Nome:</app-input-text>
-    <app-input-text formControlName="cognome" >Cognome:</app-input-text>
-    <app-input-text formControlName="cellulare" >Cellulare:</app-input-text>
-    <app-input-text formControlName="città" >Città:</app-input-text>
-    <app-input-text formControlName="cap" >Cap:</app-input-text>
-    <app-input-text formControlName="indirizzo" >Indirizzo:</app-input-text>
-    <app-input-text formControlName="numero" >Numero:</app-input-text>
-    <app-input-text formControlName="informazioni" >Informazioni aggiuntive:</app-input-text>
+    Nome:<app-input-text formControlName="nome" ></app-input-text>
+    Cognome:<app-input-text formControlName="cognome" ></app-input-text>
+    Cellulare:<app-input-text formControlName="cellulare" ></app-input-text>
+    Città:<app-input-text formControlName="città" ></app-input-text>
+    Cap:<app-input-text formControlName="cap" ></app-input-text>
+    Indirizzo:<app-input-text formControlName="indirizzo" ></app-input-text>
+    Numero:<app-input-text formControlName="numero" ></app-input-text>
+    Informazioni aggiuntive:<app-input-text formControlName="informazioni" ></app-input-text>
     <button (click)="cancel()" type="button">Annulla</button>
     <button type="submit" [disabled]="indirizzoForm.invalid">Conferma</button>
 </form>

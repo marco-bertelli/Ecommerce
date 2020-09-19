@@ -25,7 +25,8 @@ import { Step2FormComponent } from './components/step2-form/step2-form.component
     FormsModule,
     ReactiveFormsModule,
     IvyCarouselModule,
-    CustomizeFormComponent
+    CustomizeFormComponent,
+    Step2FormComponent
   ]
 
 })

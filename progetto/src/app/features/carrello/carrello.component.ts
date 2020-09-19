@@ -16,6 +16,7 @@ export class CarrelloComponent implements OnInit {
 
   subscription=new Subscription();
   prodotti:Prodotto[]=[];
+  indirizzo;
   
   constructor(private store: Store,private router: Router) { }
 
@@ -29,5 +30,11 @@ export class CarrelloComponent implements OnInit {
   stepS(){
     this.step++;
   }
-
+salvaForm(indirizzo){
+  this.indirizzo=indirizzo;
+  console.log(this.indirizzo)
+}
+undo() {
+  this.indirizzo=this.indirizzo;
+}
 }
