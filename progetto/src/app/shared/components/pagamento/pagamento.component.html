@@ -1,0 +1,14 @@
+<head>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+</head>
+<button (click)="pay()">
+  
+    Buy for ${{ amount / 100 }}.00
+  
+</button>
+  
+<hr>
+  
+<div *ngIf="loading">Loading....</div>
+

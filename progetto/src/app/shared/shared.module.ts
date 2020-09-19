@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { CustomizeFormComponent } from './components/customize-form/customize-form.component';
 import { Step2FormComponent } from './components/step2-form/step2-form.component';
+import { PagamentoComponent } from './components/pagamento/pagamento.component';
 
 
 
@@ -13,6 +14,7 @@ import { Step2FormComponent } from './components/step2-form/step2-form.component
     InputTextComponent,
     CustomizeFormComponent,
     Step2FormComponent,
+    PagamentoComponent,
   ],
   imports: [
     CommonModule,
@@ -26,7 +28,8 @@ import { Step2FormComponent } from './components/step2-form/step2-form.component
     ReactiveFormsModule,
     IvyCarouselModule,
     CustomizeFormComponent,
-    Step2FormComponent
+    Step2FormComponent,
+    PagamentoComponent
   ]
 
 })

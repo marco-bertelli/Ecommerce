@@ -3,7 +3,11 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [
+      "stripe-v3",
+      "stripe-checkout",
+      "node"
+    ]
   },
   "files": [
     "src/main.ts",
