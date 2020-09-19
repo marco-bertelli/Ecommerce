@@ -29,6 +29,7 @@ export class CarrelloComponent implements OnInit {
 
   stepS(){
     this.step++;
+    console.log(this.step)
   }
 salvaForm(indirizzo){
   this.indirizzo=indirizzo;
