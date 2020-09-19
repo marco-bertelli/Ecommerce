@@ -1,1 +1,13 @@
-<p>step2-form works!</p>
+
+<form [formGroup]="indirizzoForm" (ngSubmit)="confirmChanges()" class="form">
+    <app-input-text formControlName="nome" >Nome:</app-input-text>
+    <app-input-text formControlName="cognome" >Cognome:</app-input-text>
+    <app-input-text formControlName="cellulare" >Cellulare:</app-input-text>
+    <app-input-text formControlName="città" >Città:</app-input-text>
+    <app-input-text formControlName="cap" >Cap:</app-input-text>
+    <app-input-text formControlName="indirizzo" >Indirizzo:</app-input-text>
+    <app-input-text formControlName="numero" >Numero:</app-input-text>
+    <app-input-text formControlName="informazioni" >Informazioni aggiuntive:</app-input-text>
+    <button (click)="cancel()" type="button">Annulla</button>
+    <button type="submit" [disabled]="indirizzoForm.invalid">Conferma</button>
+</form>
