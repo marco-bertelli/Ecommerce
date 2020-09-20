@@ -31,6 +31,7 @@ export class CustomizeFormComponent implements OnInit {
         colore: [this.prodotto.colore,Validators.required],
         testo: [this.prodotto.testo,Validators.required],
         Ctesto: [this.prodotto.Ctesto,Validators.required],
+        Prezzo:this.prodotto.Prezzo
       });
     }
   }
@@ -43,6 +44,7 @@ export class CustomizeFormComponent implements OnInit {
         colore: ['',Validators.required],
         testo: ['',Validators.required],
         Ctesto: ['',Validators.required],
+        Prezzo:''
     });
   }
 

@@ -47,6 +47,7 @@
                 <h2>Riassunto prodotti:</h2>
                     <ng-container *ngFor='let prodotto of prodotti'>
                         <p>{{prodotto.nome}}</p>
+                        <p>{{prodotto.Prezzo}}</p>
                     </ng-container>
                     <button class="continua" (click)="stepS()">Continua</button>
             </div>

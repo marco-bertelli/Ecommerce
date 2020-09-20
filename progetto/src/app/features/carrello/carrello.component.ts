@@ -25,6 +25,7 @@ export class CarrelloComponent implements OnInit {
     ).subscribe(prodotti => {
       this.prodotti=prodotti;
     }));
+    console.log(this.prodotti)
   }
 
   stepS(){

@@ -4,4 +4,5 @@ export interface Prodotto{
     colore:string;
     testo:string;
     Ctesto:string;
+    Prezzo:number;
 }
