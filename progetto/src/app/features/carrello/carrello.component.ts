@@ -49,4 +49,9 @@ undo() {
   this.indirizzo=this.indirizzo;
   this.stepP();
 }
+yes(){
+  return "yes"
+}
+
+
 }
