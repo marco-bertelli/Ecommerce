@@ -17,6 +17,7 @@ export class CarrelloComponent implements OnInit {
   subscription=new Subscription();
   prodotti:Prodotto[]=[];
   indirizzo;
+  totale=0;
   
   constructor(private store: Store,private router: Router) { }
 
@@ -25,8 +26,13 @@ export class CarrelloComponent implements OnInit {
     ).subscribe(prodotti => {
       this.prodotti=prodotti;
     }));
-    console.log(this.prodotti)
+    this.prodotti.forEach(prodotto => {
+      console.log(prodotto.Prezzo)
+      this.totale+=prodotto.Prezzo;
+    });
+    
   }
+  
 
   stepS(){
     this.step++;
