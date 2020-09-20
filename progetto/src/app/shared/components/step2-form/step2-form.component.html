@@ -8,6 +8,6 @@
     Indirizzo:<app-input-text formControlName="indirizzo" ></app-input-text>
     Numero:<app-input-text formControlName="numero" ></app-input-text>
     Informazioni aggiuntive:<app-input-text formControlName="informazioni" ></app-input-text>
-    <button (click)="cancel()" type="button">Annulla</button>
-    <button type="submit" [disabled]="indirizzoForm.invalid">Conferma</button>
+    <button (click)="cancel()" class="continua" type="button">Annulla</button>
+    <button type="submit" class="continua" [disabled]="indirizzoForm.invalid">Conferma</button>
 </form>
