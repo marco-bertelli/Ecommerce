@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
 
   //immagini per carosello
   images = [
-    {path:"./assets/img/tacchino-2.jpg"},
+    {path:"./assets/img/t-shirt.png"},
     {path:"./assets/img/t.jpg"},
   ];
 
