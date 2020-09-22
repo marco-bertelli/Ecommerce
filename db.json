@@ -32,7 +32,7 @@
   "prodotti":[
     {
       "id":0,
-      "nome":"prova",
+      "nome":"t-shirt",
       "colore":"prova",
       "testo":"prova",
       "Ctesto":"prova",
@@ -40,7 +40,7 @@
     },
     {
       "id":1,
-      "nome":"prova",
+      "nome":"t-shirt1",
       "colore":"prova",
       "testo":"prova",
       "Ctesto":"prova",
