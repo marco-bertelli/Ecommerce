@@ -28,11 +28,15 @@ export class CarrelloComponent implements OnInit {
     ).subscribe(prodotti => {
       this.prodotti=prodotti;
     }));
+    //prezzo
+    this.calcolcaPrezzo();
+  }
+
+  calcolcaPrezzo(){
     this.prodotti.forEach(prodotto => {
       console.log(prodotto.Prezzo)
       this.totale+=prodotto.Prezzo;
     });
-    
   }
   
 
@@ -59,7 +63,11 @@ delete(id:number){
   copy.splice(index, 1);
   this.prodotti=copy;
   this.updateProdotti(this.prodotti);
+  //azzero e calcolo da capo
+  this.totale=0;
+  this.calcolcaPrezzo();
 }
+
 //aggiorna prodotti
 updateProdotti(prodotti: Prodotto[]) {
   this.store.dispatch(UpdateCarrello({prodotti}));

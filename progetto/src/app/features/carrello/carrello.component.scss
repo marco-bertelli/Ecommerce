@@ -667,6 +667,7 @@ a:hover {
     width: 40px;
     height: 40px;
     right: -40px;
+    border: 1px solid black;
 }
 
 .rosso {
@@ -674,6 +675,13 @@ a:hover {
   height: 40px;
   right: -40px;
     background: #cb5a5e;
+}
+.white {
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  right: -40px;
+    background: #fff;
 }
 
 .yellow {
