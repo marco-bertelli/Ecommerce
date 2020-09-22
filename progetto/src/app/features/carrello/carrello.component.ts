@@ -49,8 +49,9 @@ undo() {
   this.indirizzo=this.indirizzo;
   this.stepP();
 }
-yes(){
-  return "yes"
+delete(id:number){
+  this.prodotti.splice(id,1);
+  
 }
 
 

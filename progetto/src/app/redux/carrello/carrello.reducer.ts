@@ -1,7 +1,7 @@
 import {Prodotto} from '../../core/model/prodotto.interface';
 
 import { createReducer, on ,Action} from '@ngrx/store';
-import { UpdateCarrello, insertProdotto } from './carrello.action';
+import { UpdateCarrello, insertProdotto, deleteProdotto } from './carrello.action';
 
 export interface CarrelloState{
     prodotti:Prodotto[];
