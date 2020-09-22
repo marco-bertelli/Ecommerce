@@ -49,9 +49,14 @@ undo() {
   this.indirizzo=this.indirizzo;
   this.stepP();
 }
+//metodo per eliminare senza errore typescript
 delete(id:number){
-  this.prodotti.splice(id,1);
+  var copy = Array.from(this.prodotti);
+  const index = copy.findIndex(x => x.id === id);
+  copy.splice(index, 1);
+  this.prodotti=copy;
   
+
 }
 
 
