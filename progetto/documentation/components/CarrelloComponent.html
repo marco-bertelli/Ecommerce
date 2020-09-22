@@ -1,0 +1,1831 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>progetto documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">progetto documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>CarrelloComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/features/carrello/carrello.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-carrello</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./carrello.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./carrello.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#indirizzo">indirizzo</a>
+                            </li>
+                            <li>
+                                <a href="#prodotti">prodotti</a>
+                            </li>
+                            <li>
+                                <a href="#step">step</a>
+                            </li>
+                            <li>
+                                <a href="#subscription">subscription</a>
+                            </li>
+                            <li>
+                                <a href="#totale">totale</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#calcolcaPrezzo">calcolcaPrezzo</a>
+                            </li>
+                            <li>
+                                <a href="#delete">delete</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#salvaForm">salvaForm</a>
+                            </li>
+                            <li>
+                                <a href="#stepP">stepP</a>
+                            </li>
+                            <li>
+                                <a href="#stepS">stepS</a>
+                            </li>
+                            <li>
+                                <a href="#undo">undo</a>
+                            </li>
+                            <li>
+                                <a href="#updateProdotti">updateProdotti</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(store: Store, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/features/carrello/carrello.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>store</td>
+                                                  
+                                                        <td>
+                                                                    <code>Store</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="calcolcaPrezzo"></a>
+                    <span class="name">
+                        <b>
+                            calcolcaPrezzo
+                        </b>
+                        <a href="#calcolcaPrezzo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>calcolcaPrezzo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="35"
+                            class="link-to-prism">src/app/features/carrello/carrello.component.ts:35</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="delete"></a>
+                    <span class="name">
+                        <b>
+                            delete
+                        </b>
+                        <a href="#delete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>delete(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">src/app/features/carrello/carrello.component.ts:60</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/features/carrello/carrello.component.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="salvaForm"></a>
+                    <span class="name">
+                        <b>
+                            salvaForm
+                        </b>
+                        <a href="#salvaForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>salvaForm(indirizzo)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/app/features/carrello/carrello.component.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>indirizzo</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="stepP"></a>
+                    <span class="name">
+                        <b>
+                            stepP
+                        </b>
+                        <a href="#stepP"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>stepP()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="46"
+                            class="link-to-prism">src/app/features/carrello/carrello.component.ts:46</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="stepS"></a>
+                    <span class="name">
+                        <b>
+                            stepS
+                        </b>
+                        <a href="#stepS"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>stepS()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/features/carrello/carrello.component.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="undo"></a>
+                    <span class="name">
+                        <b>
+                            undo
+                        </b>
+                        <a href="#undo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>undo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="54"
+                            class="link-to-prism">src/app/features/carrello/carrello.component.ts:54</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateProdotti"></a>
+                    <span class="name">
+                        <b>
+                            updateProdotti
+                        </b>
+                        <a href="#updateProdotti"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateProdotti(prodotti: <a href="../interfaces/Prodotto.html">Prodotto[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/features/carrello/carrello.component.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>prodotti</td>
+                                    <td>
+                                                <code><a href="../interfaces/Prodotto.html" target="_self" >Prodotto[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="indirizzo"></a>
+                        <span class="name">
+                            <b>
+                            indirizzo</b>
+                            <a href="#indirizzo"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/features/carrello/carrello.component.ts:21</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="prodotti"></a>
+                        <span class="name">
+                            <b>
+                            prodotti</b>
+                            <a href="#prodotti"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Prodotto.html" target="_self" >Prodotto[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/features/carrello/carrello.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="step"></a>
+                        <span class="name">
+                            <b>
+                            step</b>
+                            <a href="#step"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/features/carrello/carrello.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="subscription"></a>
+                        <span class="name">
+                            <b>
+                            subscription</b>
+                            <a href="#subscription"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Subscription()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/features/carrello/carrello.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="totale"></a>
+                        <span class="name">
+                            <b>
+                            totale</b>
+                            <a href="#totale"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/features/carrello/carrello.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Prodotto } from &#x27;src/app/core/model/prodotto.interface&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import { Store, select } from &#x27;@ngrx/store&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { selectCarrello } from &#x27;src/app/redux/carrello&#x27;;
+import { UpdateProdotti } from &#x27;src/app/redux/articoli/articoli.action&#x27;;
+import { UpdateCarrello } from &#x27;src/app/redux/carrello/carrello.action&#x27;;
+
+@Component({
+  selector: &#x27;app-carrello&#x27;,
+  templateUrl: &#x27;./carrello.component.html&#x27;,
+  styleUrls: [&#x27;./carrello.component.scss&#x27;]
+})
+export class CarrelloComponent implements OnInit {
+
+  step&#x3D;0;
+
+  subscription&#x3D;new Subscription();
+  prodotti:Prodotto[]&#x3D;[];
+  indirizzo;
+  totale&#x3D;0;
+  
+  constructor(private store: Store,private router: Router) { }
+
+  ngOnInit(): void {
+    this.subscription.add(this.store.pipe(select(selectCarrello)
+    ).subscribe(prodotti &#x3D;&gt; {
+      this.prodotti&#x3D;prodotti;
+    }));
+    //prezzo
+    this.calcolcaPrezzo();
+  }
+
+  calcolcaPrezzo(){
+    this.prodotti.forEach(prodotto &#x3D;&gt; {
+      console.log(prodotto.Prezzo)
+      this.totale+&#x3D;prodotto.Prezzo;
+    });
+  }
+  
+
+  stepS(){
+    this.step++;
+  }
+  stepP(){
+    this.step--;
+  }
+
+salvaForm(indirizzo){
+  this.indirizzo&#x3D;indirizzo;
+  this.stepS();
+}
+undo() {
+  this.indirizzo&#x3D;this.indirizzo;
+  this.stepP();
+}
+
+//metodo per eliminare senza errore typescript
+delete(id:number){
+  var copy &#x3D; Array.from(this.prodotti);
+  const index &#x3D; copy.findIndex(x &#x3D;&gt; x.id &#x3D;&#x3D;&#x3D; id);
+  copy.splice(index, 1);
+  this.prodotti&#x3D;copy;
+  this.updateProdotti(this.prodotti);
+  //azzero e calcolo da capo
+  this.totale&#x3D;0;
+  this.calcolcaPrezzo();
+}
+
+//aggiorna prodotti
+updateProdotti(prodotti: Prodotto[]) {
+  this.store.dispatch(UpdateCarrello({prodotti}));
+}
+
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">
+&lt;div class&#x3D;&quot;wrapper fadeInDown&quot;&gt;
+    &lt;div id&#x3D;&quot;formContent&quot;&gt;
+      &lt;!-- Horizontal Steppers --&gt;
+&lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+  
+      &lt;!-- Stepers Wrapper --&gt;
+      &lt;ul class&#x3D;&quot;stepper stepper-horizontal&quot;&gt;
+  
+        &lt;!-- First Step --&gt;
+        &lt;li class&#x3D;&quot;completed&quot;&gt;
+        &lt;a&gt;
+            &lt;span class&#x3D;&quot;circle&quot;&gt;1&lt;/span&gt;
+            &lt;span class&#x3D;&quot;label&quot;&gt;First step&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+  
+        &lt;!-- Second Step --&gt;
+        &lt;li class&#x3D;&quot;completed&quot;&gt;
+          &lt;a (click)&#x3D;&quot;stepS()&quot;&gt;
+            &lt;span class&#x3D;&quot;circle&quot;&gt;2&lt;/span&gt;
+            &lt;span class&#x3D;&quot;label&quot;&gt;Second step&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+  
+        &lt;!-- Third Step --&gt;
+        &lt;li class&#x3D;&quot;completed&quot;&gt;
+          &lt;a (click)&#x3D;&quot;stepS()&quot;&gt;
+            &lt;span class&#x3D;&quot;circle&quot;&gt;&lt;mdb-icon fas icon&#x3D;&quot;circle&quot;&gt;3&lt;/mdb-icon&gt;&lt;/span&gt;
+            &lt;span class&#x3D;&quot;label&quot;&gt;Third step&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;!-- /.Stepers Wrapper --&gt;
+  
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- /.Horizontal Steppers --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;div [ngSwitch]&#x3D;&quot;step&quot;&gt;
+    &lt;div class&#x3D;&quot;step1&quot; *ngSwitchCase&#x3D;&quot;0&quot; &gt;
+        &lt;div class&#x3D;&quot;wrapper fadeInDown&quot;&gt;
+            &lt;div id&#x3D;&quot;formContent&quot;&gt;
+              &lt;div class&#x3D;&quot;container&quot;&gt;&lt;/div&gt;
+                &lt;h2&gt;Riassunto prodotti:&lt;/h2&gt;
+                    &lt;ng-container *ngFor&#x3D;&#x27;let prodotto of prodotti&#x27;&gt;
+
+                      &lt;section id&#x3D;&quot;cart&quot;&gt; 
+                          &lt;article class&#x3D;&quot;product&quot;&gt;
+                              &lt;header&gt;
+                                  &lt;a class&#x3D;&quot;remove&quot;&gt;
+                                      &lt;img [src]&#x3D;&quot;&#x27;./assets/img/&#x27;+prodotto.nome+&#x27;.jpg&#x27;&quot; alt&#x3D;&quot;&quot;&gt;
+              
+                                      &lt;h3 (click)&#x3D;&quot;delete(prodotto.id)&quot;&gt;Remove product&lt;/h3&gt;
+                                  &lt;/a&gt;
+                              &lt;/header&gt;
+              
+                              &lt;div class&#x3D;&quot;content&quot;&gt;
+              
+                                  &lt;h1&gt;{{prodotto.nome}}&lt;/h1&gt;
+              
+                                  &lt;div [title]&#x3D;&quot;&#x27;You have selected this product to be shipped in the color &#x27;+ prodotto.colore&quot; style&#x3D;&quot;top: 0&quot; [class]&#x3D;&quot;prodotto.colore&quot;&gt;&lt;/div&gt;
+                              &lt;/div&gt;
+              
+                              &lt;footer class&#x3D;&quot;content&quot;&gt;
+                                  
+              
+                                  &lt;h2 class&#x3D;&quot;full-price&quot;&gt;
+                                    {{prodotto.Prezzo}},99€
+                                  &lt;/h2&gt;
+                              &lt;/footer&gt;
+                          &lt;/article&gt;
+                      &lt;/section&gt;
+                    &lt;/ng-container&gt;
+              
+              
+                  &lt;footer id&#x3D;&quot;site-footer&quot;&gt;
+                      &lt;div class&#x3D;&quot;container clearfix&quot;&gt;
+              
+                          &lt;div class&#x3D;&quot;left&quot;&gt;
+                              &lt;h3 class&#x3D;&quot;shipping&quot;&gt;Shipping: &lt;span&gt;5.00&lt;/span&gt;€&lt;/h3&gt;
+                          &lt;/div&gt;
+              
+                          &lt;div class&#x3D;&quot;right&quot;&gt;
+                              &lt;h1 class&#x3D;&quot;total&quot;&gt;Totale: &lt;span&gt;{{(+totale)+5}}&lt;/span&gt;€&lt;/h1&gt;
+                              &lt;a class&#x3D;&quot;btn&quot; (click)&#x3D;&quot;stepS()&quot;&gt;Checkout&lt;/a&gt;
+                          &lt;/div&gt;
+              
+                      &lt;/div&gt;
+                  &lt;/footer&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;step2&quot; *ngSwitchCase&#x3D;&quot;1&quot;&gt;
+      &lt;div class&#x3D;&quot;wrapper fadeInDown&quot;&gt;
+        &lt;div id&#x3D;&quot;formContent&quot;&gt;
+            &lt;h2&gt;Indirizzo Spedizione:&lt;/h2&gt;
+            &lt;app-step2-form (formSubmitEvent)&#x3D;&quot;salvaForm($event)&quot; (undoEvent)&#x3D;&quot;undo()&quot;&gt;&lt;/app-step2-form&gt;
+        &lt;/div&gt;
+        
+    &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;step1&quot; *ngSwitchCase&#x3D;&quot;2&quot;&gt;
+      &lt;div class&#x3D;&quot;wrapper fadeInDown&quot;&gt;
+        &lt;div id&#x3D;&quot;formContent&quot;&gt;
+            &lt;h2&gt;Pagamento:&lt;/h2&gt;
+            &lt;!--pagemnto realmente funzionante con messaggi su telefono!--&gt;
+            &lt;app-pagamento [amount]&#x3D;&quot;100&quot; [description]&#x3D;&quot;prova&quot;&gt;&lt;/app-pagamento&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt; 
+&lt;/div&gt;
+
+  </code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./carrello.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">body {
+    font-family: &quot;Poppins&quot;, sans-serif;
+    height: 100vh;
+  }
+  
+  a {
+    color: #92badd;
+    display:inline-block;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display:inline-block;
+    margin: 40px 8px 10px 8px; 
+    color: #cccccc;
+  }
+  
+  
+  
+  @import url(&#x27;https://fonts.googleapis.com/css?family&#x3D;Poppins&#x27;);
+
+  /* BASIC */
+  
+  html {
+    background-color: #56baed;
+  }
+  
+  body {
+    font-family: &quot;Poppins&quot;, sans-serif;
+    height: 100vh;
+  }
+  
+  a {
+    color: #92badd;
+    display:inline-block;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display:inline-block;
+    margin: 40px 8px 10px 8px; 
+    color: #cccccc;
+  }
+  
+  
+  
+  /* STRUCTURE */
+  
+  .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: top;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+  }
+  
+  #formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 190%;
+    max-width: 1200px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  
+  #formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .step1{
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    width: 770px;
+    right: 10%;
+  }
+  .step2{
+    position: fixed;
+    top: 18%;
+    left: 30%;
+    width: 770px;
+  }
+  
+  
+  
+  /* TABS */
+  
+  h2.inactive {
+    color: #cccccc;
+  }
+  
+  h2.active {
+    color: #0d0d0d;
+    border-bottom: 2px solid #5fbae9;
+  }
+  
+  
+  
+  /* FORM TYPOGRAPHY*/
+  
+  input[type&#x3D;button], input[type&#x3D;submit], input[type&#x3D;reset]  {
+    background-color: #56baed;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 20px 40px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input[type&#x3D;button]:hover, input[type&#x3D;submit]:hover, input[type&#x3D;reset]:hover  {
+    background-color: #39ace7;
+  }
+  
+  input[type&#x3D;button]:active, input[type&#x3D;submit]:active, input[type&#x3D;reset]:active  {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  
+  input[type&#x3D;text] {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+  
+  input[type&#x3D;text]:focus {
+    background-color: #fff;
+    border-bottom: 2px solid #5fbae9;
+  }
+  
+  input[type&#x3D;text]:placeholder {
+    color: #cccccc;
+  }
+  .continua{
+    background-color: #56baed;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 20px 40px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+  
+  /* animazioni */
+  
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  /* Simple CSS3 Fade-in Animation */
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  
+  .fadeIn {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+  
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+  
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+  }
+  
+  .fadeIn.first {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+  
+  .fadeIn.second {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  
+  .fadeIn.third {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+  }
+  
+  .fadeIn.fourth {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  
+  /* Simple CSS3 Fade-in Animation */
+  .underlineHover:after {
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #56baed;
+    content: &quot;&quot;;
+    transition: width 0.2s;
+  }
+  
+  .underlineHover:hover {
+    color: #0d0d0d;
+  }
+  
+  .underlineHover:hover:after{
+    width: 100%;
+  }
+  
+  
+  
+  /* OTHERS */
+  
+  *:focus {
+      outline: none;
+  } 
+  
+  #icon {
+    width:60%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    background: #eee;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.clearfix {
+  content: &quot;&quot;;
+  display: table;
+  clear: both;  
+}
+
+#site-header, #site-footer {
+    background: #fff;
+}
+
+#site-header {
+    margin: 0 0 30px 0;
+}
+
+#site-header h1 {
+    font-size: 31px;
+    font-weight: 300;
+    padding: 40px 0;
+    position: relative;
+    margin: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    -ms-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+a:hover {
+    color: #53b5aa;
+}
+
+#site-header h1 span {
+    color: #53b5aa;
+}
+
+#site-header h1 span.last-span {
+    background: #fff;
+    padding-right: 150px;
+    position: absolute;
+    left: 217px;
+
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+#site-header h1:hover span.last-span, #site-header h1 span.is-open {
+    left: 363px;
+}
+
+#site-header h1 em {
+    font-size: 16px;
+    font-style: normal;
+    vertical-align: middle;
+}
+
+.container {
+    font-family: &#x27;Open Sans&#x27;, sans-serif;
+    margin: 0 auto;
+    width: 980px;
+}
+
+#cart {
+    width: 100%;
+}
+
+#cart h1 {
+    font-weight: 300;
+}
+
+#cart a {
+    color: #53b5aa;
+    text-decoration: none;
+
+    -webkit-transition: color .2s linear;
+    -moz-transition: color .2s linear;
+    -ms-transition: color .2s linear;
+    -o-transition: color .2s linear;
+    transition: color .2s linear;
+}
+
+#cart a:hover {
+    color: #000;
+}
+
+.product.removed {
+    margin-left: 980px !important;
+    opacity: 0;
+}
+
+.product {
+    border: 1px solid #eee;
+    margin: 20px 0;
+    width: 100%;
+    height: 195px;
+    position: relative;
+
+    -webkit-transition: margin .2s linear, opacity .2s linear;
+    -moz-transition: margin .2s linear, opacity .2s linear;
+    -ms-transition: margin .2s linear, opacity .2s linear;
+    -o-transition: margin .2s linear, opacity .2s linear;
+    transition: margin .2s linear, opacity .2s linear;
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+}
+
+.product header, .product .content {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-style: none none solid none;
+    float: left;
+}
+
+.product header {
+    background: #000;
+    margin: 0 1% 20px 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 24%;
+    height: 195px;
+}
+
+.product header:hover img {
+    opacity: .7;
+}
+
+.product header:hover h3 {
+    bottom: 73px;
+}
+
+.product header h3 {
+    background: #53b5aa;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 49px;
+    margin: 0;
+    padding: 0 30px;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    left: 0;
+
+    -webkit-transition: bottom .2s linear;
+    -moz-transition: bottom .2s linear;
+    -ms-transition: bottom .2s linear;
+    -o-transition: bottom .2s linear;
+    transition: bottom .2s linear;
+}
+
+.remove {
+    cursor: pointer;
+}
+
+.product .content {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 140px;
+    padding: 0 20px;
+    width: 75%;
+}
+
+.product h1 {
+    color: #53b5aa;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 17px 0 20px 0;
+}
+
+.product footer.content {
+    height: 50px;
+    margin: 6px 0 0 0;
+    padding: 0;
+}
+
+.product footer .price {
+    background: #fcfcfc;
+    color: #000;
+    float: right;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 49px;
+    margin: 0;
+    padding: 0 30px;
+}
+
+.product footer .full-price {
+    background: #53b5aa;
+    color: #fff;
+    float: right;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 49px;
+    margin: 0;
+    padding: 0 30px;
+
+    -webkit-transition: margin .15s linear;
+    -moz-transition: margin .15s linear;
+    -ms-transition: margin .15s linear;
+    -o-transition: margin .15s linear;
+    transition: margin .15s linear;
+}
+
+.qt, .qt-plus, .qt-minus {
+    display: block;
+    float: left;
+}
+
+.qt {
+    font-size: 19px;
+    line-height: 50px;
+    width: 70px;
+    text-align: center;
+}
+
+.qt-plus, .qt-minus {
+    background: #fcfcfc;
+    border: none;
+    font-size: 30px;
+    font-weight: 300;
+    height: 100%;
+    padding: 0 20px;
+    -webkit-transition: background .2s linear;
+    -moz-transition: background .2s linear;
+    -ms-transition: background .2s linear;
+    -o-transition: background .2s linear;
+    transition: background .2s linear;
+}
+
+.qt-plus:hover, .qt-minus:hover {
+    background: #53b5aa;
+    color: #fff;
+    cursor: pointer;
+}
+
+.qt-plus {
+    line-height: 50px;
+}
+
+.qt-minus {
+    line-height: 47px;
+}
+
+#site-footer {
+    margin: 30px 0 0 0;
+}
+
+#site-footer {
+    padding: 40px;
+}
+
+#site-footer h1 {
+    background: #fcfcfc;
+    border: 1px solid #ccc;
+    border-style: none none solid none;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0 0 7px 0;
+    padding: 14px 40px;
+    text-align: center;
+}
+
+#site-footer h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 10px 0 0 0;
+}
+
+#site-footer h3 {
+    font-size: 19px;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.btn {
+    background: #53b5aa;
+    border: 1px solid #999;
+    border-style: none none solid none;
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 16px 0;
+    width: 290px;
+    text-align: center;
+
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #429188;
+}
+
+.type {
+    background: #fcfcfc;
+    font-size: 13px;
+    padding: 10px 16px;
+    left: 100%;
+}
+
+.type, .color {
+    border: 1px solid #ccc;
+    border-style: none none solid none;
+    position: absolute;
+}
+
+.color {
+    width: 40px;
+    height: 40px;
+    right: -40px;
+    border: 1px solid black;
+}
+
+.rosso {
+  width: 40px;
+  height: 40px;
+  right: -40px;
+    background: #cb5a5e;
+}
+.white {
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  right: -40px;
+    background: #fff;
+}
+
+.yellow {
+  width: 40px;
+  height: 40px;
+  right: -40px;
+    background: #f1c40f;
+}
+
+.blue {
+  width: 40px;
+  height: 40px;
+  right: -40px;
+    background: #3598dc;
+}
+
+.minused {
+    margin: 0 50px 0 0 !important;
+}
+
+.added {
+    margin: 0 -50px 0 0 !important;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="wrapper fadeInDown">    <div id="formContent">      <!-- Horizontal Steppers --><div class="row">    <div class="col-md-12">        <!-- Stepers Wrapper -->      <ul class="stepper stepper-horizontal">          <!-- First Step -->        <li class="completed">        <a>            <span class="circle">1</span>            <span class="label">First step</span>          </a>        </li>          <!-- Second Step -->        <li class="completed">          <a (click)="stepS()">            <span class="circle">2</span>            <span class="label">Second step</span>          </a>        </li>          <!-- Third Step -->        <li class="completed">          <a (click)="stepS()">            <span class="circle"><mdb-icon fas icon="circle">3</mdb-icon></span>            <span class="label">Third step</span>          </a>        </li>      </ul>      <!-- /.Stepers Wrapper -->      </div>  </div>  <!-- /.Horizontal Steppers -->    </div>  </div><div [ngSwitch]="step">    <div class="step1" *ngSwitchCase="0" >        <div class="wrapper fadeInDown">            <div id="formContent">              <div class="container"></div>                <h2>Riassunto prodotti:</h2>                    <ng-container *ngFor=\'let prodotto of prodotti\'>                      <section id="cart">                           <article class="product">                              <header>                                  <a class="remove">                                      <img [src]="\'./assets/img/\'+prodotto.nome+\'.jpg\'" alt="">                                                    <h3 (click)="delete(prodotto.id)">Remove product</h3>                                  </a>                              </header>                                            <div class="content">                                                <h1>{{prodotto.nome}}</h1>                                                <div [title]="\'You have selected this product to be shipped in the color \'+ prodotto.colore" style="top: 0" [class]="prodotto.colore"></div>                              </div>                                            <footer class="content">                                                                                  <h2 class="full-price">                                    {{prodotto.Prezzo}},99€                                  </h2>                              </footer>                          </article>                      </section>                    </ng-container>                                              <footer id="site-footer">                      <div class="container clearfix">                                        <div class="left">                              <h3 class="shipping">Shipping: <span>5.00</span>€</h3>                          </div>                                        <div class="right">                              <h1 class="total">Totale: <span>{{(+totale)+5}}</span>€</h1>                              <a class="btn" (click)="stepS()">Checkout</a>                          </div>                                    </div>                  </footer>            </div>          </div>        </div>    <div class="step2" *ngSwitchCase="1">      <div class="wrapper fadeInDown">        <div id="formContent">            <h2>Indirizzo Spedizione:</h2>            <app-step2-form (formSubmitEvent)="salvaForm($event)" (undoEvent)="undo()"></app-step2-form>        </div>            </div>    </div>    <div class="step1" *ngSwitchCase="2">      <div class="wrapper fadeInDown">        <div id="formContent">            <h2>Pagamento:</h2>            <!--pagemnto realmente funzionante con messaggi su telefono!-->            <app-pagamento [amount]="100" [description]="prova"></app-pagamento>        </div>    </div></div> </div>  </div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CarrelloComponent', 'selector': 'app-carrello'},{'name': 'CustomizeComponent', 'selector': 'app-customize'},{'name': 'CustomizeFormComponent', 'selector': 'app-customize-form'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'InputTextComponent', 'selector': 'app-input-text'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'PagamentoComponent', 'selector': 'app-pagamento'},{'name': 'RegistrazioneComponent', 'selector': 'app-registrazione'},{'name': 'Step2FormComponent', 'selector': 'app-step2-form'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CarrelloComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CarrelloComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
