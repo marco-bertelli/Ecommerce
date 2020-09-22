@@ -59,7 +59,7 @@ delete(id:number){
   this.prodotti=copy;
   this.updateProdotti(this.prodotti);
 }
-
+//aggiorna prodotti
 updateProdotti(prodotti: Prodotto[]) {
   this.store.dispatch(UpdateCarrello({prodotti}));
 }
