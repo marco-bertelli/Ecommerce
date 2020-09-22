@@ -14,12 +14,11 @@ body{
     align-items: center;
 }
 section{
-    width: 100%;
+    width: 200%;
     height: 100vh;
     color: #fff;
     background: linear-gradient(-45deg,#555555,#131313,#131313,#131313);
-    background: "./assets/img/tacchino-2.jpg";
-    background-size: 400%,400%;
+    background-size: 500%,500%;
     position: relative;
     animation: change 30s ease-in-out infinite;
 
@@ -36,8 +35,11 @@ h1{
     padding:2rem;
 }
 carousel{
-    top:42%;
+    top:35%;
     left:37.5%;
+}
+carousel img{
+    size:400px;
 }
 @keyframes change{
     0%{
@@ -56,7 +58,7 @@ ul{
     
     display: flex;
     margin-left: 41%;
-    margin-top: 25%;
+    margin-top: 20%;
 }
 ul li {
     position: relative;

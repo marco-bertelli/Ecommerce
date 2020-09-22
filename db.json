@@ -33,7 +33,7 @@
     {
       "id":0,
       "nome":"t-shirt",
-      "colore":"prova",
+      "colore":"white",
       "testo":"prova",
       "Ctesto":"prova",
       "Prezzo":10
@@ -41,7 +41,7 @@
     {
       "id":1,
       "nome":"t-shirt1",
-      "colore":"prova",
+      "colore":"white",
       "testo":"prova",
       "Ctesto":"prova",
       "Prezzo":10

@@ -21,8 +21,8 @@ export class HomeComponent implements OnInit {
 
   //immagini per carosello
   images = [
-    {path:"./assets/img/t-shirt.png"},
-    {path:"./assets/img/t.jpg"},
+    {path:"./assets/img/t-shirt.jpg"},
+    {path:"./assets/img/t-shirt1.png"},
   ];
 
   constructor(private store: Store,private router: Router) { }
@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
 
 
-    
+
     this.subscription.add(this.store.pipe(select(selectProdotti)
     ).subscribe(prodotti => {
       this.prodotti=prodotti;
