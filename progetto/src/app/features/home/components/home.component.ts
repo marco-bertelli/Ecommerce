@@ -29,6 +29,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
+
+    
     this.subscription.add(this.store.pipe(select(selectProdotti)
     ).subscribe(prodotti => {
       this.prodotti=prodotti;
