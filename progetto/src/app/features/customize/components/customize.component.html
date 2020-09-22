@@ -1,4 +1,7 @@
 <body>
+<div class="home">
+<button class="invia" (click)='carrello()'> Home</button>
+</div>
 <div class="container">
     <div class="card">
         <div class="imgBx">
@@ -13,5 +16,7 @@
 <div class="form">
 <app-customize-form (formSubmitEvent)="editForm($event)" [prodotto]="prodotto" (undoEvent)="undo()"></app-customize-form>
 </div>
-<button (click)='carrello()'>Vai al carrello</button>
+<div class="carrello">
+<button class="invia" (click)='carrello()'>carrello</button>
+</div>
 </body>

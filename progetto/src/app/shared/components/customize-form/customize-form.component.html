@@ -2,7 +2,7 @@
 
 
 <form [formGroup]="prodottoForm" (ngSubmit)="confirmChanges()" class="form">
-    <app-input-text formControlName="nome" ></app-input-text>
+    <p>Nome:</p><app-input-text formControlName="nome" ></app-input-text>
     <ng-container class="box">
         <label id="radio1">
             <input  type="radio" value="white" formControlName="colore">
@@ -14,9 +14,11 @@
           </label>
      <!--<app-input-text formControlName="colore" ></i></app-input-text>-->
     </ng-container>
-    <app-input-text formControlName="testo" ></app-input-text>
-    <app-input-text formControlName="Ctesto" ></app-input-text>
-    <button (click)="cancel()" type="button">Annulla</button>
-    <button type="submit" [disabled]="prodottoForm.invalid">Conferma</button>
+    <p>Testo:</p><app-input-text formControlName="testo" ></app-input-text>
+    <p>Colore Testo:</p><app-input-text formControlName="Ctesto" ></app-input-text>
+    <div class="bottoni">
+      <button class="invia" (click)="cancel()" type="button">Annulla</button>
+      <button class="invia" type="submit" [disabled]="prodottoForm.invalid">Conferma</button>
+    </div>
 </form>
 
