@@ -4,6 +4,8 @@ import { Subscription } from 'rxjs';
 import { Store, select } from '@ngrx/store';
 import { Router } from '@angular/router';
 import { selectCarrello } from 'src/app/redux/carrello';
+import { UpdateProdotti } from 'src/app/redux/articoli/articoli.action';
+import { UpdateCarrello } from 'src/app/redux/carrello/carrello.action';
 
 @Component({
   selector: 'app-carrello',
@@ -55,8 +57,11 @@ delete(id:number){
   const index = copy.findIndex(x => x.id === id);
   copy.splice(index, 1);
   this.prodotti=copy;
-  
+  this.updateProdotti(this.prodotti);
+}
 
+updateProdotti(prodotti: Prodotto[]) {
+  this.store.dispatch(UpdateCarrello({prodotti}));
 }
 
 
