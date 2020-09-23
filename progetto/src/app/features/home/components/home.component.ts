@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   //immagini per carosello
   images = [
     {path:"./assets/img/t-shirt.jpg"},
-    {path:"./assets/img/t-shirt1.png"},
+    {path:"./assets/img/t-shirt1.jpg"},
   ];
 
   constructor(private store: Store,private router: Router) { }

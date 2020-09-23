@@ -12,7 +12,7 @@
         <li class="completed">
         <a>
             <span class="circle">1</span>
-            <span class="label">First step</span>
+            <span class="label">Carrello</span>
           </a>
         </li>
   
@@ -20,7 +20,7 @@
         <li class="completed">
           <a (click)="stepS()">
             <span class="circle">2</span>
-            <span class="label">Second step</span>
+            <span class="label">Indirizzo</span>
           </a>
         </li>
   
@@ -28,7 +28,7 @@
         <li class="completed">
           <a (click)="stepS()">
             <span class="circle"><mdb-icon fas icon="circle">3</mdb-icon></span>
-            <span class="label">Third step</span>
+            <span class="label">Pagamento</span>
           </a>
         </li>
       </ul>
@@ -110,7 +110,7 @@
         <div id="formContent">
             <h2>Pagamento:</h2>
             <!--pagemnto realmente funzionante con messaggi su telefono!-->
-            <app-pagamento [amount]="100" [description]="prova"></app-pagamento>
+            <app-pagamento [amount]="totale+5" [description]="prova"></app-pagamento>
         </div>
     </div>
 </div> 
