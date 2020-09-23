@@ -40,4 +40,7 @@ export class CustomizeComponent implements OnInit {
   carrello(){
     this.router.navigate(['/carrello']);
   }
+  home(){
+    this.router.navigate(['/home']);
+  }
 }
