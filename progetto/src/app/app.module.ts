@@ -17,6 +17,10 @@ import { environment } from '../environments/environment'; // Angular CLI enviro
 import { reducerCarrello } from './redux/carrello/carrello.reducer';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CookieService } from 'ngx-cookie-service';
+import { NgcCookieConsentModule } from 'ngx-cookieconsent/cookieconsent.module';
+
+
 
 
 @NgModule({
@@ -33,6 +37,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     IvyCarouselModule,
     MDBBootstrapModule.forRoot(),
     
+   
+    
     
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states
@@ -45,7 +51,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
   ],
   
-  providers: [],
+  providers: [CookieService],
   exports:[
     MDBBootstrapModule
   ],

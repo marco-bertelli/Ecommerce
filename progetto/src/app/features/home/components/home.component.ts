@@ -49,10 +49,11 @@ export class HomeComponent implements OnInit {
       this.nProdotti=prodotti;
     }));
 
-    this.calcolcaPrezzo();
+    this.calcolaPrezzo();
   }
 
-  calcolcaPrezzo(){
+  calcolaPrezzo(){
+    this.totale=0;
     this.carrello.forEach(prodotto => {
       console.log(prodotto.Prezzo)
       this.totale+=prodotto.Prezzo;

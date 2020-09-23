@@ -9,11 +9,12 @@ import { Observable } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import { UpdateUser } from 'src/app/redux/login/login.action';
 import { selectUser } from 'src/app/redux/login';
+import { CookieService } from 'ngx-cookie-service';
 
 @Injectable()
 export class LoginService {
 
-  constructor(private router: Router,private loginService:LoginServerService,private store:Store) { }
+  constructor(private router: Router,private loginService:LoginServerService,private store:Store,private cookie:CookieService) { }
 
   executeLogin(username: string,password:string){
     
@@ -24,6 +25,8 @@ export class LoginService {
       let user:User;
       user=users[0];
       //lo metto nello store
+      this.cookie.set("USER :",user.name);
+      
       this.store.dispatch(UpdateUser({user}));
       }
     });
