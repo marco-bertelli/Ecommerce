@@ -25,8 +25,8 @@ export class LoginService {
       let user:User;
       user=users[0];
       //lo metto nello store
-      this.cookie.set("USER :",user.name);
-      
+      this.cookie.set("USER :",user.username);
+
       this.store.dispatch(UpdateUser({user}));
       }
     });
