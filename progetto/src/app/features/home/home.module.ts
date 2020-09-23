@@ -6,6 +6,8 @@ import { HomeComponent } from './components/home.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import {MatBadgeModule} from '@angular/material/badge';
+import { DropdownModule, MDBBootstrapModule } from 'angular-bootstrap-md';
+
 @NgModule({
   declarations: [HomeComponent],
   imports: [
@@ -13,7 +15,9 @@ import {MatBadgeModule} from '@angular/material/badge';
     HomeRoutingModule,
     SharedModule,
     IvyCarouselModule,
-    MatBadgeModule
+    MatBadgeModule,
+    DropdownModule,
+    MDBBootstrapModule.forRoot(),
   ]
 })
 export class HomeModule { }
